@@ -95,11 +95,10 @@
         <tr class="table-dark">
           <td>Totals</td>
           <td></td>
-          <td>£<?php echo ($brick_cost + $door_cost + $window_cost); ?></td>
-          <td><?php echo ($brick_time + $door_time + $window_time); ?> days</td>
+          <td>£<?php echo grand_total(num_wanted())[0]; ?></td>
+          <td><?php echo grand_total(num_wanted())[1]; ?> days</td>
         </tr>
       </table>
-
 
       <p>If you like what you see, give us a call today!</p>
       <hr>
