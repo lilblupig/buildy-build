@@ -44,12 +44,12 @@
     $wanted = $num_wanted;
 
     $cost_total = 0;
-    for ($i=0; $i<3; $i++) {
+    for ($i=0; $i<count($wanted); $i++) {
       $cost_total += $cost[$i] * $num_wanted[$i];
     };
 
     $time_total = 0;
-    for ($i=0; $i<3; $i++) {
+    for ($i=0; $i<count($wanted); $i++) {
       $time_total += $time[$i] * $num_wanted[$i];
     };
 
