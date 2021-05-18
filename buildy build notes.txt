@@ -1,0 +1,43 @@
+Comment code always!
+Include total
+Back to entry page
+
+Validation - fields number required!  Shaun could make letters!
+
+Server side validation:
+
+if bricks_wanted ==  etc
+
+is_numeric (! not numeric return 0)
+
+Could redirect to home page - header redirect
+Could say no
+
+Does POST exist? if $_POST
+
+Can call variables into fields for continuity
+
+
+Fun With Functions:
+
+Function code which can be executed with a single call
+Used to prevent repetition
+
+Buildy Build order does not matter!
+Good to keep functions together
+
+function name(parameters) {}
+Can only return a single thing - use arrays
+If parameters given, must pass values!
+
+Force Global if necessary but not good idea
+
+Private and public functions
+
+
+Include Files
+
+include (errors but continues) or require (ends page)
+
+Joins pages together as one page!
+
