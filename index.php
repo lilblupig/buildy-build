@@ -77,20 +77,20 @@
         <tr>
           <td>Bricks</td>
           <td><?php echo num_wanted()[0]; ?></td>
-          <td>£<?php echo $brick_cost; ?></td>
-          <td><?php echo $brick_time; ?> days</td>
+          <td>£<?php echo calculate(0, num_wanted())[0]; ?></td>
+          <td><?php echo calculate(0, num_wanted())[1]; ?> days</td>
         </tr>
         <tr>
           <td>Doors</td>
           <td><?php echo num_wanted()[1]; ?></td>
-          <td>£<?php echo $door_cost; ?></td>
-          <td><?php echo $door_time; ?> days</td>
+          <td>£<?php echo calculate(1, num_wanted())[0]; ?></td>
+          <td><?php echo calculate(1, num_wanted())[1]; ?> days</td>
         </tr>
         <tr>
           <td>Windows</td>
           <td><?php echo num_wanted()[2]; ?></td>
-          <td>£<?php echo $window_cost; ?></td>
-          <td><?php echo $window_time; ?> days</td>
+          <td>£<?php echo calculate(2, num_wanted())[0]; ?></td>
+          <td><?php echo calculate(2, num_wanted())[1]; ?> days</td>
         </tr>
         <tr class="table-dark">
           <td>Totals</td>

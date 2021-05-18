@@ -17,23 +17,17 @@
     $windows_wanted = "0";
   };
 
-  //Specify Cost per unit and Days per unit (10 units for bricks)
-  $brick_stats = [2,0.1];
-  $door_stats = [10,2];
-  $window_stats = [15,3];
-
-  $brick_cost = num_wanted()[0] * $brick_stats[0];
-  $door_cost = num_wanted()[1] * $door_stats[0];
-  $window_cost = num_wanted()[2] * $window_stats[0];
-
-  $brick_time = num_wanted()[0] * $brick_stats[1];
-  $door_time = num_wanted()[1] * $door_stats[1];
-  $window_time = num_wanted()[2] * $window_stats[1];
-
   //Calculates total cost and time required for an item and returns them as an array
-  function calculate($required, $cost, $time) {
-    $total_cost = $required * $cost;
-    $total_time = $required * $time;
+  function calculate($what, $num_wanted) {
+    //Specify Cost per unit: bricks [0], doors [1] windows [2]
+    $cost = [2, 10, 15];
+    //Specify Days per unit (10 units for bricks): bricks [0], doors [1] windows [2]
+    $time = [0.1, 2, 3];
+    //
+    $wanted = $num_wanted;
+
+    $total_cost = $cost[$what] * $wanted[$what];
+    $total_time = $time[$what] * $wanted[$what];
 
     $totals = [$total_cost, $total_time];
 
