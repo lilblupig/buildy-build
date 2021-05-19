@@ -67,40 +67,17 @@
 
     <div class="container py-4">
       <h2>Specification received:</h2>
-      <table class="table">
-        <thead class="table-dark">
-          <td>Item</td>
-          <td>Number</td>
-          <td>Cost</td>
-          <td>Time</td>
-        </thead>
-        <tr>
-          <td>Bricks</td>
-          <td><?php echo num_wanted()[0]; ?></td>
-          <td>£<?php echo calculate(0, num_wanted())[0]; ?></td>
-          <td><?php echo calculate(0, num_wanted())[1]; ?> days</td>
-        </tr>
-        <tr>
-          <td>Doors</td>
-          <td><?php echo num_wanted()[1]; ?></td>
-          <td>£<?php echo calculate(1, num_wanted())[0]; ?></td>
-          <td><?php echo calculate(1, num_wanted())[1]; ?> days</td>
-        </tr>
-        <tr>
-          <td>Windows</td>
-          <td><?php echo num_wanted()[2]; ?></td>
-          <td>£<?php echo calculate(2, num_wanted())[0]; ?></td>
-          <td><?php echo calculate(2, num_wanted())[1]; ?> days</td>
-        </tr>
-        <tr class="table-dark">
-          <td>Totals</td>
-          <td></td>
-          <td>£<?php echo grand_total(num_wanted())[0]; ?></td>
-          <td><?php echo grand_total(num_wanted())[1]; ?> days</td>
-        </tr>
-      </table>
 
-      <p>If you like what you see, give us a call today!</p>
+        <?php if (!empty($_POST["bricks"])) {
+            build_table($things, num_wanted());
+          } else {
+            echo "
+            <hr>
+            <p class=\"lead text-center\">Enter your requirements above for an estimate to appear here.</lead>
+            ";
+          };
+        ?>
+
       <hr>
     </div>
 
