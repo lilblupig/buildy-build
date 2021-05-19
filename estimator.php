@@ -58,7 +58,7 @@
       $time_total += $time[$i] * $num_wanted[$i];
     };
 
-    // Make the table footer and Grand Totals
+    // Make the table footer and Grand Totals, and add prompt
     echo "
       <tr class=\"table-dark\">
         <td>Grand Totals</td>
