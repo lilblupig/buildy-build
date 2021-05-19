@@ -9,14 +9,6 @@
     return [$bricks_wanted, $doors_wanted, $windows_wanted];
   };
 
-  if (isset($_POST["submit"])) {
-    num_wanted();
-  } else {
-    $bricks_wanted = "0";
-    $doors_wanted = "0";
-    $windows_wanted = "0";
-  };
-
   //Calculates total cost and time required for an item and returns them as an array
   function calculate($what, $num_wanted) {
     // Specify Cost per unit: bricks [0], doors [1] windows [2]
