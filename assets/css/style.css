@@ -13,6 +13,10 @@ h1 {
   scroll-margin-top: 4rem;
 }
 
+input {
+  text-align: right;
+}
+
 /* Nav Bar */
 
 .nav-container {
