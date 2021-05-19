@@ -49,15 +49,15 @@
       <p>Things Buildy Build can build for you, just enter your requirements below, and get an instant estimate of time and cost!</p>
       <form action="index.php" method="post">
         <div class="pb-2">
-          <input name="bricks" placeholder="0" required />
+          <input name="bricks" type="number" placeholder="0" required />
           <label for="bricks">Bricks</label>
         </div>
         <div class="pb-2">
-          <input name="doors" placeholder="0" required />
+          <input name="doors" type="number" placeholder="0" required />
           <label for="doors">Doors</label>
         </div>
         <div class="pb-2">
-          <input name="windows" placeholder="0" required />
+          <input name="windows" type="number" placeholder="0" required />
           <label for="windows">Windows</label>
         </div>
         <input type="submit" value="Get Estimate!" />
@@ -82,7 +82,7 @@
             ";
           };
         ?>
-        
+
       <hr>
     </div>
 
@@ -90,9 +90,9 @@
     <div id="testimonials" class="container py-4 text-center scroll-top">
       <h1>Buildy Build Reviews</h1>
       <p>"Buildy Build are great! We knew exactly what we had to pay, and how long it would take for the devastation to end."</p>
-      <i class="fas fa-check tick-icon"></i>
+      <i aria-hidden="true" class="fas fa-check tick-icon"></i>
       <p>"Buildy Build built some things for us, and we love them!".</p>
-      <i class="fas fa-check tick-icon"></i>
+      <i aria-hidden="true" class="fas fa-check tick-icon"></i>
       <p>"Buildy Build built most of our house, and what wasn't on the estimator they quoted and completed especially for us, on time and in budget."</p>
     </div>
 
