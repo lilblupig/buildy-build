@@ -90,9 +90,9 @@
     <div id="testimonials" class="container py-4 text-center scroll-top">
       <h1>Buildy Build Reviews</h1>
       <p>"Buildy Build are great! We knew exactly what we had to pay, and how long it would take for the devastation to end."</p>
-      <i class="fas fa-check tick-icon"></i>
+      <i aria-hidden="true" class="fas fa-check tick-icon"></i>
       <p>"Buildy Build built some things for us, and we love them!".</p>
-      <i class="fas fa-check tick-icon"></i>
+      <i aria-hidden="true" class="fas fa-check tick-icon"></i>
       <p>"Buildy Build built most of our house, and what wasn't on the estimator they quoted and completed especially for us, on time and in budget."</p>
     </div>
 
