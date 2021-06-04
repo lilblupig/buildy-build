@@ -2,17 +2,25 @@
 
 <html lang="en">
 
-  <!-- Get head info from universal page -->
   <?php
     include "estimator.php";
-    include "head.php";
   ?>
+
+  <!-- Get head info from universal page -->
+  
+  <head>
+    <?php
+      include "head.php";
+    ?>
+  </head>
 
   <body>
     <!-- Get nav from universal page -->
-    <?php
-      include "nav.php";
-    ?>
+    <nav>
+      <?php
+        include "nav.php";
+      ?>
+    </nav>
 
     <!-- Splash image & tagline -->
     <div class="container-fluid hero-container">
@@ -97,9 +105,11 @@
     </div>
 
     <!-- Get footer from universal page -->
-    <?php
-      include "footer.php";
-    ?>
+    <footer>
+      <?php
+        include "footer.php";
+      ?>
+    </footer>
 
   <!-- Scripts -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.1/umd/popper.min.js"></script>

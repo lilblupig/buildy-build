@@ -1,5 +1,6 @@
-<nav>
-  <div class="container-fluid nav-container fixed-top">
+<?php
+  echo
+  '<div class="container-fluid nav-container fixed-top">
     <div class="row justify-content-md-center">
       <div class="col-auto g-md-0">
         <a href="#" class="nav-link logo px-0 px-md-3">Buildy Build</a>
@@ -19,5 +20,5 @@
         </div>
       </div>
     </div>
-  </div>
-</nav>
+  </div>'
+?>
